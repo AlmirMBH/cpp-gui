@@ -1,0 +1,45 @@
+<?xml version='1.0'?>
+<DevRes>
+	<Translations>
+		<Res id="open" tr="Otvori"/>
+		<Res id="save" tr="Snimi"/>
+		<Res id="appTitle" tr="Lab GUI"/>	
+		<Res id="name" tr="Naziv artikla:"/>
+		<Res id="quant" tr="Količina:"/>
+		<Res id="price" tr="Cijena:"/>
+		<Res id="value" tr="Iznos:"/>
+		<Res id="add" tr="Dodaj"/>
+		<Res id="delete" tr="Briši"/>
+		<Res id="Items" tr="Artikli"/>
+		<Res id="Customers" tr="Komitenti"/>
+		<Res id="ShowItems" tr="Prikaži sve artikle"/>
+		<Res id="ShowCustomers" tr="Prikaži sve komitente"/>
+		
+		<Res id="Items" tr="Artikli"/>
+		<Res id="Customers" tr="Komitenti"/>
+		<Res id="InDocs" tr="Ulazi"/>
+		<Res id="OutDocs" tr="Računi"/>
+		<Res id="ShowInDocs" tr="Prikaži ulazne dokumente"/>
+		<Res id="ShowOutDocs" tr="Prikaži račune"/>
+		<Res id="Items2" tr="Stavke"/>
+		<Res id="Docs" tr="Dokumenti"/>
+		<Res id="App" tr="Aplikacija"/>
+		<Res id="ID:" tr="Šifra:"/>
+		<Res id="Name:" tr="Naziv:"/>
+		<Res id="VAT:" tr="PDV:"/>
+		<Res id="Unit:" tr="JMJ:"/>
+		<Res id="Storage:" tr="Način skl.:"/>
+		<Res id="PDVName" tr="Naziv PDV-a"/>
+		<Res id="UnitName" tr="JMJ"/>
+		<Res id="NacinSkl" tr="Način skladištenja"/>
+		<Res id="From ID:" tr="Od šifre:"/>
+		<Res id="To ID:" tr="Do šifre:"/>
+		<Res id="Update" tr="Ažuriraj"/>
+		<Res id="UpdateTT" tr="Ažuriraj selektirani red"/>
+		<Res id="Adr:" tr="Adresa:"/>
+		<Res id="Date:" tr="Datum:"/>
+		<Res id="ID" tr="Šifra"/>
+		<Res id="Name" tr="Naziv"/>
+
+	</Translations>
+</DevRes>

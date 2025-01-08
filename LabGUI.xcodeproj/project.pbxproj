@@ -1,0 +1,656 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		F79BEA1C3604717DE1B58DCD /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 444E10439DD0434EBCADE9FD /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				C136F5BE4828F1BA9B4443B1 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				5F1767D00D064293823FD5DA /* PBXTargetDependency */,
+				FB0A8B11DAB6459DA065C04B /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		14D85A9F215641189F0F2EDB /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/Dialogs/src/NavigatorView.h */ = {isa = PBXBuildFile; fileRef = EA017FD8FD194DAE9CE514A7 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/Dialogs/src/NavigatorView.h */; };
+		17123E084CC84FE095F0EF42 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/Dialogs/src/ViewItem.h */ = {isa = PBXBuildFile; fileRef = C98DB24624164FF69FB23D3D /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/Dialogs/src/ViewItem.h */; };
+		28E3940A61664D14A20C66C9 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/common_files/include/DialogsLib.h */ = {isa = PBXBuildFile; fileRef = 6454F22E1D9842BB8C034BF2 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/common_files/include/DialogsLib.h */; };
+		2993C79034274C7C8368E08F /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/Dialogs/src/ViewItem_orig.h */ = {isa = PBXBuildFile; fileRef = E7F3EFD912484747A6E5521E /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/Dialogs/src/ViewItem_orig.h */; };
+		2FF85FF2B8B44CD3B22BA67B /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/PoS/src/main.cpp */ = {isa = PBXBuildFile; fileRef = 5F32E69C621D40B1A4945BC4 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/PoS/src/main.cpp */; };
+		34C2E28A06BE4EA3AAA8F912 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/Dialogs/src/ViewDoc.h */ = {isa = PBXBuildFile; fileRef = 92ADEDF857BD4C5891DB7859 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/Dialogs/src/ViewDoc.h */; };
+		402196AF7ED3448399739D5D /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/CMakeFiles/PoS.dir/Info.plist */ = {isa = PBXBuildFile; fileRef = 41DE54AD0C314DD081CEC6C4 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/CMakeFiles/PoS.dir/Info.plist */; };
+		4651A5C4183A42EEA46664F5 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/PoS/src/Application.h */ = {isa = PBXBuildFile; fileRef = F33ED8D8EF664AC6ACD31BE3 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/PoS/src/Application.h */; };
+		74604F93418446A883D8DE3F /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/PoS/src/MainWindow.h */ = {isa = PBXBuildFile; fileRef = D92C6E01097841CF991ACA89 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/PoS/src/MainWindow.h */; };
+		8C730A935B63473ABB9802A5 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 69B6078F066A45DFA3C06204 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/CMakeLists.txt */; };
+		99390B9790EC4D74824F9408 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/Dialogs/src/ViewItem.cpp */ = {isa = PBXBuildFile; fileRef = 1FB7A4171C0D4DFEBFDBDC47 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/Dialogs/src/ViewItem.cpp */; };
+		ABBBABE554FC4F2F8BEE4606 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/Dialogs/src/ViewItem_orig.cpp */ = {isa = PBXBuildFile; fileRef = 2462291BDF574E659129417A /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/Dialogs/src/ViewItem_orig.cpp */; };
+		B59696005A0144C3A34434B6 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/PoS/src/MenuBar.h */ = {isa = PBXBuildFile; fileRef = 56E1CDFF7D8644F1BA2E6ED3 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/PoS/src/MenuBar.h */; };
+		BAE27BD5992942339717F73A /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/PoS/src/MainWindow.cpp */ = {isa = PBXBuildFile; fileRef = 7F0191887C2242D39C13F282 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/PoS/src/MainWindow.cpp */; };
+		D0BC3C200F6A4BAA8021B1DA /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/Dialogs/src/SwitcherView.h */ = {isa = PBXBuildFile; fileRef = 3EB583640ED74DD3B1316A6B /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/Dialogs/src/SwitcherView.h */; };
+		E27D985F8BF54D368D227343 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 3F1F529517A2443C8313215E /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/CMakeLists.txt */; };
+		E56960E99E1C4741980DE185 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/PoS/src/ToolBar.h */ = {isa = PBXBuildFile; fileRef = 02D26CED46CB4F29A6F87489 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/PoS/src/ToolBar.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		35A8BCAFEF164B5388C86874 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		53BD93348F53462EB708507C /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		20ED15027B0140C7BA68A210 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14FB34E08A4241D793282FFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 476988AB3E0688BD14B6B49C;
+			remoteInfo = Dialogs;
+		};
+		4CE7E92DAAF74A9D84779749 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14FB34E08A4241D793282FFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 476988AB3E0688BD14B6B49C;
+			remoteInfo = Dialogs;
+		};
+		6A9121ABFC504717BB84E6BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14FB34E08A4241D793282FFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BD6ED2B25D19690961B45D1;
+			remoteInfo = PoS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02D26CED46CB4F29A6F87489 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/PoS/src/ToolBar.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ToolBar.h; path = PoS/src/ToolBar.h; sourceTree = SOURCE_ROOT; };
+		1745D404377F4F5A8898F538 /* Dialogs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libDialogs.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FB7A4171C0D4DFEBFDBDC47 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/Dialogs/src/ViewItem.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ViewItem.cpp; path = Dialogs/src/ViewItem.cpp; sourceTree = SOURCE_ROOT; };
+		2462291BDF574E659129417A /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/Dialogs/src/ViewItem_orig.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ViewItem_orig.cpp; path = Dialogs/src/ViewItem_orig.cpp; sourceTree = SOURCE_ROOT; };
+		3EB583640ED74DD3B1316A6B /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/Dialogs/src/SwitcherView.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SwitcherView.h; path = Dialogs/src/SwitcherView.h; sourceTree = SOURCE_ROOT; };
+		3F1F529517A2443C8313215E /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		41DE54AD0C314DD081CEC6C4 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/CMakeFiles/PoS.dir/Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; name = Info.plist; path = CMakeFiles/PoS.dir/Info.plist; sourceTree = SOURCE_ROOT; };
+		56E1CDFF7D8644F1BA2E6ED3 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/PoS/src/MenuBar.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = MenuBar.h; path = PoS/src/MenuBar.h; sourceTree = SOURCE_ROOT; };
+		5F32E69C621D40B1A4945BC4 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/PoS/src/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = PoS/src/main.cpp; sourceTree = SOURCE_ROOT; };
+		6454F22E1D9842BB8C034BF2 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/common_files/include/DialogsLib.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = DialogsLib.h; path = common_files/include/DialogsLib.h; sourceTree = SOURCE_ROOT; };
+		69B6078F066A45DFA3C06204 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		6BDE72E8607A4A7FB5826D52 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		7F0191887C2242D39C13F282 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/PoS/src/MainWindow.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MainWindow.cpp; path = PoS/src/MainWindow.cpp; sourceTree = SOURCE_ROOT; };
+		92ADEDF857BD4C5891DB7859 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/Dialogs/src/ViewDoc.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ViewDoc.h; path = Dialogs/src/ViewDoc.h; sourceTree = SOURCE_ROOT; };
+		C98DB24624164FF69FB23D3D /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/Dialogs/src/ViewItem.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ViewItem.h; path = Dialogs/src/ViewItem.h; sourceTree = SOURCE_ROOT; };
+		D92C6E01097841CF991ACA89 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/PoS/src/MainWindow.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = MainWindow.h; path = PoS/src/MainWindow.h; sourceTree = SOURCE_ROOT; };
+		E7F3EFD912484747A6E5521E /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/Dialogs/src/ViewItem_orig.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ViewItem_orig.h; path = Dialogs/src/ViewItem_orig.h; sourceTree = SOURCE_ROOT; };
+		EA017FD8FD194DAE9CE514A7 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/Dialogs/src/NavigatorView.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = NavigatorView.h; path = Dialogs/src/NavigatorView.h; sourceTree = SOURCE_ROOT; };
+		F33ED8D8EF664AC6ACD31BE3 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/PoS/src/Application.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Application.h; path = PoS/src/Application.h; sourceTree = SOURCE_ROOT; };
+		F687B3FB62BC4A6EB9F73DB3 /* PoS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = PoS; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		91357077F0974A7F8DA2948B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7DC54DDC0444229B43D1151 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E2558E77AE14FE5B23E1DD0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1745D404377F4F5A8898F538 /* Dialogs */,
+				F687B3FB62BC4A6EB9F73DB3 /* PoS */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5FE4D19B33B14DFCA6F7C30C /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				EA017FD8FD194DAE9CE514A7 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/Dialogs/src/NavigatorView.h */,
+				3EB583640ED74DD3B1316A6B /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/Dialogs/src/SwitcherView.h */,
+				92ADEDF857BD4C5891DB7859 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/Dialogs/src/ViewDoc.h */,
+				C98DB24624164FF69FB23D3D /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/Dialogs/src/ViewItem.h */,
+				E7F3EFD912484747A6E5521E /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/Dialogs/src/ViewItem_orig.h */,
+			);
+			name = inc;
+			sourceTree = "<group>";
+		};
+		6D90DE750A1A4E8C9003D729 /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				F33ED8D8EF664AC6ACD31BE3 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/PoS/src/Application.h */,
+				D92C6E01097841CF991ACA89 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/PoS/src/MainWindow.h */,
+				56E1CDFF7D8644F1BA2E6ED3 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/PoS/src/MenuBar.h */,
+				02D26CED46CB4F29A6F87489 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/PoS/src/ToolBar.h */,
+			);
+			name = inc;
+			sourceTree = "<group>";
+		};
+		6ED8C79201DA482AA7D4B7C8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8DBBDA011E894344B1CA7D51 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		8FBFEBF091D04463B8B7E4D9 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				7F0191887C2242D39C13F282 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/PoS/src/MainWindow.cpp */,
+				5F32E69C621D40B1A4945BC4 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/PoS/src/main.cpp */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		90DAA695C9174341B67DE878 /* Dialogs */ = {
+			isa = PBXGroup;
+			children = (
+				C2CF1FC04F1149BD9931A08E /* src */,
+				5FE4D19B33B14DFCA6F7C30C /* inc */,
+				F65116EDD36F40A59DB00263 /* inc_dll */,
+				3F1F529517A2443C8313215E /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/CMakeLists.txt */,
+			);
+			name = Dialogs;
+			sourceTree = "<group>";
+		};
+		946AD5B0013B4DD09950D74B /* PoS */ = {
+			isa = PBXGroup;
+			children = (
+				6D90DE750A1A4E8C9003D729 /* inc */,
+				8FBFEBF091D04463B8B7E4D9 /* src */,
+				E312980EBF094A079BBCD1A8 /* Resources */,
+				69B6078F066A45DFA3C06204 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/CMakeLists.txt */,
+			);
+			name = PoS;
+			sourceTree = "<group>";
+		};
+		C2CF1FC04F1149BD9931A08E /* src */ = {
+			isa = PBXGroup;
+			children = (
+				1FB7A4171C0D4DFEBFDBDC47 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/Dialogs/src/ViewItem.cpp */,
+				2462291BDF574E659129417A /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/Dialogs/src/ViewItem_orig.cpp */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		D44DAD735C454EA8876E579C = {
+			isa = PBXGroup;
+			children = (
+				90DAA695C9174341B67DE878 /* Dialogs */,
+				946AD5B0013B4DD09950D74B /* PoS */,
+				FACB0DC9125842F1822ABE18 /* ALL_BUILD */,
+				4E2558E77AE14FE5B23E1DD0 /* Products */,
+				F9981085AC524FA4B0A37E7F /* Frameworks */,
+				6ED8C79201DA482AA7D4B7C8 /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		E312980EBF094A079BBCD1A8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				41DE54AD0C314DD081CEC6C4 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/CMakeFiles/PoS.dir/Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F65116EDD36F40A59DB00263 /* inc_dll */ = {
+			isa = PBXGroup;
+			children = (
+				6454F22E1D9842BB8C034BF2 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/common_files/include/DialogsLib.h */,
+			);
+			name = inc_dll;
+			sourceTree = "<group>";
+		};
+		F9981085AC524FA4B0A37E7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FACB0DC9125842F1822ABE18 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				8DBBDA011E894344B1CA7D51 /* CMake Rules */,
+				6BDE72E8607A4A7FB5826D52 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		476988AB3E0688BD14B6B49C /* Dialogs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86671328655C48C8ABF3A108 /* Build configuration list for PBXNativeTarget "Dialogs" */;
+			buildPhases = (
+				72B69804CE5E485F939FB685 /* Sources */,
+				D7DC54DDC0444229B43D1151 /* Frameworks */,
+				4B2ECE43B68540D96BBC21E4 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dialogs;
+			productName = Dialogs;
+			productReference = 1745D404377F4F5A8898F538 /* Dialogs */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		7BD6ED2B25D19690961B45D1 /* PoS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28CED2A104A3431CAE332935 /* Build configuration list for PBXNativeTarget "PoS" */;
+			buildPhases = (
+				EEC2A2E6B3F84210BF8D989C /* Sources */,
+				91357077F0974A7F8DA2948B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92E602067E814F93AEBB3EFE /* PBXTargetDependency */,
+			);
+			name = PoS;
+			productName = PoS;
+			productReference = F687B3FB62BC4A6EB9F73DB3 /* PoS */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14FB34E08A4241D793282FFB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1620;
+			};
+			buildConfigurationList = 25E9D9E6D5CD43AF833B7039 /* Build configuration list for PBXProject "LabGUI" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				53BD93348F53462EB708507C /* Debug */,
+				35A8BCAFEF164B5388C86874 /* Release */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = D44DAD735C454EA8876E579C;
+			projectDirPath = .;
+			projectRoot = "";
+			targets = (
+				F79BEA1C3604717DE1B58DCD /* ALL_BUILD */,
+				476988AB3E0688BD14B6B49C /* Dialogs */,
+				7BD6ED2B25D19690961B45D1 /* PoS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B2ECE43B68540D96BBC21E4 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1
+  /usr/local/bin/cmake -E cmake_symlink_library /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Projects/Out/LabGUI/Debug/libDialogs.dylib /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Projects/Out/LabGUI/Debug/libDialogs.dylib /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Projects/Out/LabGUI/Debug/libDialogs.dylib
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1
+  /usr/local/bin/cmake -E cmake_symlink_library /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Projects/Out/LabGUI/Release/libDialogs.dylib /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Projects/Out/LabGUI/Release/libDialogs.dylib /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Projects/Out/LabGUI/Release/libDialogs.dylib
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		C136F5BE4828F1BA9B4443B1 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+/Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/CMakeFiles/ALL_BUILD			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		72B69804CE5E485F939FB685 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99390B9790EC4D74824F9408 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/Dialogs/src/ViewItem.cpp */,
+				ABBBABE554FC4F2F8BEE4606 /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/Dialogs/src/ViewItem_orig.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEC2A2E6B3F84210BF8D989C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAE27BD5992942339717F73A /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/PoS/src/MainWindow.cpp */,
+				2FF85FF2B8B44CD3B22BA67B /* /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/PoS/src/main.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F1767D00D064293823FD5DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BD6ED2B25D19690961B45D1 /* PoS */;
+			targetProxy = 6A9121ABFC504717BB84E6BA /* PBXContainerItemProxy */;
+		};
+		92E602067E814F93AEBB3EFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 476988AB3E0688BD14B6B49C /* Dialogs */;
+			targetProxy = 20ED15027B0140C7BA68A210 /* PBXContainerItemProxy */;
+		};
+		FB0A8B11DAB6459DA065C04B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 476988AB3E0688BD14B6B49C /* Dialogs */;
+			targetProxy = 4CE7E92DAAF74A9D84779749 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		13A145CEFEB54ACF915F14ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk;
+				SYMROOT = /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/build;
+			};
+			name = Debug;
+		};
+		220EBBFCBAF64D0E9FF88066 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		3B91B529149F48B28083D3BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/build;
+			};
+			name = Release;
+		};
+		5A5270DCE9F847C4864A57E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = x86_64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Projects/Out/LabGUI/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",MU_RELEASE,MU_MACOS,MU_64BIT,DIALOGS_LIB_EXPORTS,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/Common/Include,"$(inherited)");
+				INFOPLIST_FILE = /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/CMakeFiles/PoS.dir/Info.plist;
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/other_bin/myLib /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Projects/Out/LabGUI/Release","$(inherited)");
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    '-std=gnu++20' -fobjc-arc ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/other_bin/myLib/mainUtils.dylib,/Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/other_bin/myLib/natGUI.dylib,/Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/other_bin/myLib/dataProvider.dylib,/Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Projects/Out/LabGUI/Release/libDialogs.dylib,/Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/other_bin/myLib/mainUtils.dylib,/Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/other_bin/myLib/natGUI.dylib,/Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/other_bin/myLib/dataProvider.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = PoS;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/build/PoS.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		68FC7A52239E4320A9CFF34F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = x86_64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Projects/Out/LabGUI/Debug;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",Dialogs_EXPORTS,MU_DEBUG,MU_MACOS,MU_64BIT,DIALOGS_LIB_EXPORTS,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/Common/Include,"$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = (/Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/other_bin/myLib,"$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++20' -fPIC ";
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names",/Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/other_bin/myLib/mainUtilsD.dylib,/Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/other_bin/myLib/natGUID.dylib,/Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/other_bin/myLib/dataProviderD.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Dialogs;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/build/Dialogs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		7BCBD02A9FF34A37AEDDEB9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = x86_64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Projects/Out/LabGUI/Release;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",Dialogs_EXPORTS,MU_RELEASE,MU_MACOS,MU_64BIT,DIALOGS_LIB_EXPORTS,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/Common/Include,"$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = (/Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/other_bin/myLib,"$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    '-std=gnu++20' -fPIC ";
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names",/Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/other_bin/myLib/mainUtils.dylib,/Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/other_bin/myLib/natGUI.dylib,/Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/other_bin/myLib/dataProvider.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Dialogs;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/build/Dialogs.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		A3459F3ACE864F308031AD52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		C1225A7D2FE7449EB4A298F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = x86_64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Projects/Out/LabGUI/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",MU_DEBUG,MU_MACOS,MU_64BIT,DIALOGS_LIB_EXPORTS,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/Common/Include,"$(inherited)");
+				INFOPLIST_FILE = /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/CMakeFiles/PoS.dir/Info.plist;
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/other_bin/myLib /Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Projects/Out/LabGUI/Debug","$(inherited)");
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++20' -fobjc-arc ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/other_bin/myLib/mainUtilsD.dylib,/Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/other_bin/myLib/natGUID.dylib,/Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/other_bin/myLib/dataProviderD.dylib,/Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Projects/Out/LabGUI/Debug/libDialogs.dylib,/Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/other_bin/myLib/mainUtilsD.dylib,/Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/other_bin/myLib/natGUID.dylib,/Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/other_bin/myLib/dataProviderD.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = PoS;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/macbookpro/Documents/Projects/dsai/natID_mac_intel/Work/CPProjects/Lab_GUI1/build/PoS.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		25E9D9E6D5CD43AF833B7039 /* Build configuration list for PBXProject "LabGUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13A145CEFEB54ACF915F14ED /* Debug */,
+				3B91B529149F48B28083D3BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		28CED2A104A3431CAE332935 /* Build configuration list for PBXNativeTarget "PoS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1225A7D2FE7449EB4A298F2 /* Debug */,
+				5A5270DCE9F847C4864A57E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		444E10439DD0434EBCADE9FD /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3459F3ACE864F308031AD52 /* Debug */,
+				220EBBFCBAF64D0E9FF88066 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		86671328655C48C8ABF3A108 /* Build configuration list for PBXNativeTarget "Dialogs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68FC7A52239E4320A9CFF34F /* Debug */,
+				7BCBD02A9FF34A37AEDDEB9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14FB34E08A4241D793282FFB /* Project object */;
+}

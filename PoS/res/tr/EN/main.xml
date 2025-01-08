@@ -1,0 +1,37 @@
+<?xml version='1.0'?>
+<DevRes>
+	<Translations>
+		<Res id="open" tr="Open"/>
+		<Res id="save" tr="Save"/>
+		<Res id="appTitle" tr="Lab GUI"/>
+		<Res id="name" tr="Item name:"/>
+		<Res id="quant" tr="Quantity:"/>
+		<Res id="price" tr="Price:"/>
+		<Res id="value" tr="Value:"/>
+		<Res id="add" tr="Add"/>
+		<Res id="delete" tr="Delete"/>
+		
+		<Res id="Items" tr="Items"/>
+		<Res id="InDocs" tr="Incoming transaction"/>
+		<Res id="OutDocs" tr="Transaction"/>
+		<Res id="ShowInDocs" tr="Show incoming transaction"/>
+		<Res id="ShowOutDocs" tr="Show transaction"/>
+		<Res id="Items2" tr="Articles"/>
+		<Res id="Docs" tr="Documents"/>
+		<Res id="App" tr="Application"/>
+		<Res id="ID:" tr="ID:"/>
+		<Res id="Name:" tr="Name:"/>
+		<Res id="VAT:" tr="VAT:"/>
+		<Res id="Unit:" tr="Meas. unit:"/>
+		<Res id="VATName" tr="VAT name"/>
+		<Res id="UnitName" tr="Unit name"/>
+		<Res id="From ID:" tr="From ID:"/>
+		<Res id="To ID:" tr="To ID:"/>
+		<Res id="Update" tr="Update"/>
+		<Res id="UpdateTT" tr="Update selected row"/>
+		<Res id="Adr:" tr="Address:"/>
+		<Res id="Date:" tr="Date:"/>
+		<Res id="ID" tr="ID"/>
+		<Res id="Name" tr="Name"/>	
+	</Translations>
+</DevRes>
