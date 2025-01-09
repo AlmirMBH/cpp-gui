@@ -26,12 +26,10 @@
 #include <gui/Color.h>
 #include "../../common_files/include/DialogsLib.h"
 
-
-
 class DIALOGS_LIB_API ViewItem : public gui::View
 {
+    enum class NamingType {GENERAL_ITEM = 1, DRINK, MEAT, FRUITVEG};
 
-    enum class NamingType {GENERAL_ITEM = 1, DRINK, MEAT, FRUITVEG  };
 protected:
     gui::Label _lblID;
     gui::NumericEdit _id;
@@ -41,7 +39,8 @@ protected:
     gui::DBComboBox _vat;
     gui::Label _lblUnit;
     gui::DBComboBox _unit;
-
+    gui::Label _lblPrice;
+    gui::NumericEdit _Price;
 
     gui::TableEdit _table;
 
@@ -60,19 +59,18 @@ protected:
     gui::Button _btnPushBack;
     gui::GridLayout _gl;
 
-
     dp::IDatabase* _db;
     dp::IDataSet* _pDS = nullptr;
     td::INT4 _paramFrom;
     td::INT4 _paramTo;
 
     std::vector<td::INT4> _itemsToDelete, _itemsToInsert, _itemsToUpdate;
+
 public:
     ViewItem();
     ~ViewItem();
 
 protected:
-
     void populateData();
     bool loadComboBox(td::String select, gui::DBComboBox& combo);
     virtual bool onChangedSelection(gui::TableEdit* pTE);
@@ -89,6 +87,4 @@ protected:
     bool updateItems();
     bool saveData();
     virtual bool onClick(gui::Button* pBtn);
-
-
 };

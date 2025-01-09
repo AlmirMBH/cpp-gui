@@ -1,5 +1,14 @@
 #pragma once
 #include "ViewItem.h"
+#include <iostream>
+
+    /**
+     * Debugging function to print terminal logs
+     */
+    template <typename T>
+    void printOutput(const std::string message = "Default message", T x = 0) {
+        std::cout << message << x << std::endl;
+    }
 
     ViewItem::ViewItem()
         : _lblID(tr("ID:"))
@@ -11,6 +20,8 @@
         , _unit(td::int4)
         , _lblFromID(tr("From ID:"))
         , _fromID(td::int4)
+        , _lblPrice(tr("Default price: "))
+        , _Price(td::real8)
         , _lblToID(tr("To ID:"))
         , _toID(td::int4)
         , _hlBtns(12)
@@ -21,7 +32,7 @@
         , _btnUpdate(tr("Update"), tr("UpdateTT"))
         , _btnInsert(tr("Insert"), tr("InsertTT"))
         , _btnPushBack(tr("PushBack"), tr("PushBackTT"))
-        , _gl(4, 6)
+        , _gl(5, 6)
         , _db(dp::getMainDatabase())
         , _paramFrom(0)
         , _paramTo(100)
@@ -29,7 +40,6 @@
         _fromID.setValue(_paramFrom);
         _toID.setValue(_paramTo);
 
-        //populate last row (horizontal layout)
         _hlBtns.append(_btnSave);
         _hlBtns.appendSpacer();
         _hlBtns.append(_lblFromID);
@@ -54,7 +64,8 @@
         gc.appendCol(_vat, td::HAlignment::Left, td::VAlignment::Center);
         gc.appendCol(_lblUnit, td::HAlignment::Left, td::VAlignment::Center);
         gc.appendCol(_unit, td::HAlignment::Left, td::VAlignment::Center);
-
+        gc.appendCol(_lblPrice, td::HAlignment::Left, td::VAlignment::Center);
+        gc.appendCol(_Price, td::HAlignment::Left, td::VAlignment::Center);
 
         gc.appendRow(_table, 0);
         gc.appendRow(_hlBtns, 0);
@@ -64,8 +75,8 @@
         populateData();
         loadComboBox("select ID, Name from VAT", _vat);
         loadComboBox("select ID, Name from Unit", _unit);
-
     }
+
 
     ViewItem::~ViewItem()
     {
@@ -76,25 +87,23 @@
 
     void ViewItem::populateData()
     {
-        _pDS = _db->createDataSet("select n.ID, n.Name, a.VATID, a.UnitID, b.Name as VATName, c.Name as UnitName"
+        _pDS = _db->createDataSet("select n.ID, n.Name, n.Price as ItemPrice, a.VATID, a.UnitID, b.Name as VATName, c.Name as UnitName"
             " from Naming n, Item a, VAT b, Unit c where n.TipID = 1 and n.TipID = a.TypeID and n.ID = a.ID and a.VATID = b.ID and a.UnitID = c.ID and n.ID >= ? and n.ID <= ? "
             , dp::IDataSet::Execution::EX_MULT);
         dp::Params params(_pDS->allocParams());
         params << _paramFrom << _paramTo;
 
-        //specify columns to obtain from the data provider
-        dp::DSColumns cols(_pDS->allocBindColumns(6));
+        dp::DSColumns cols(_pDS->allocBindColumns(7));
         cols << "ID" << td::int4 << "Name" << td::string8 << "VATID" << td::int4 << "UnitID" << td::int4
-            << "VATName" << td::string8 << "UnitName" << td::string8;
+            << "VATName" << td::string8 << "UnitName" << td::string8 << "ItemPrice" << td::real8;
 
         if (!_pDS->execute())
         {
-            //show log
             _pDS = nullptr;
             return;
         }
 
-        _table.init(_pDS, { 0, 1, 4, 5 });
+        _table.init(_pDS, { 0, 1, 4, 5, 6});
     }
 
     bool ViewItem::loadComboBox(td::String select, gui::DBComboBox& combo)
@@ -104,6 +113,7 @@
         td::String name;
         td::INT4 id;
         pCols << "ID" << id << "Name" << name;
+
         if (!pSelect->execute())
             return false;
 
@@ -111,6 +121,7 @@
         {
             combo.addItem(name, id);
         }
+
         combo.selectIndex(0);
         return true;
     }
@@ -126,6 +137,7 @@
                 _name.toZero();
                 _vat.toZero();
                 _unit.toZero();
+                _Price.toZero();
                 return true;
             }
             dp::IDataSet* pDS = _table.getDataSet();
@@ -134,9 +146,10 @@
             _name.setValue(row[1]);
             _vat.setValue(row[2].i4Val());
             _unit.setValue(row[3].i4Val());
-
+            _Price.setValue(row[6].r8Val());
             return true;
         }
+
         return false;
     }
 
@@ -147,35 +160,35 @@
         row[0].setValue(val);
         _name.getValue(val);
         row[1].setValue(val);
-
-
         _vat.getValue(val);
         row[2].setValue(val);
         _unit.getValue(val);
         row[3].setValue(val);
         row[4].setValue(_vat.getSelectedText());
         row[5].setValue(_unit.getSelectedText());
-
+        _Price.getValue(val);
+        row[6].setValue(val);
     }
+
 
     bool ViewItem::canAdd()
     {
-        //cant have 2 items with same id...
         td::Variant id = _id.getValue();
-
         dp::IDataSet* pDS = _table.getDataSet();
+
         for (size_t i = 0; i < pDS->getNumberOfRows(); ++i)
         {
             auto& row = pDS->getRow(i);
+
             if (row[0] == id)
             {
                 return false;
             }
-
         }
-        return true;
 
+        return true;
     }
+
 
     td::INT4 ViewItem::getIDfromTable(int rowID)
     {
@@ -184,9 +197,9 @@
         return row[0].i4Val();
     }
 
+
     bool ViewItem::canUpdate(int iRow)
     {
-        //cant have 2 items with same id...
         td::Variant id = _id.getValue();
         td::INT4 idTable = getIDfromTable(iRow);
 
@@ -194,9 +207,10 @@
         {
             return true;
         }
-        //show msg - cant update
+
         return false;
     }
+
 
     bool ViewItem::itemExistsInTransactions(td::INT4 id)
     {
@@ -204,20 +218,25 @@
         dp::IStatementPtr pSel(_db->createStatement("select count(1) as Cnt from TransItems a where a.ItemTypeID = ? and a.ItemID = ?"));
         dp::Params pParams(pSel->allocParams());
         pParams << nt << id;
-
         dp::Columns pCols = pSel->allocBindColumns(1);
         td::INT4 cnt;
         pCols << "Cnt" << cnt;
+        
         if (!pSel->execute())
+        {
             return false;
+        }
+        
         pSel->moveNext();
         return (cnt > 0);
     }
+
 
     bool ViewItem::canDelete(int iRow)
     {
         return !itemExistsInTransactions(getIDfromTable(iRow));
     }
+
 
     bool ViewItem::eraseNamings(NamingType nt)
     {
@@ -229,6 +248,7 @@
         for (auto item : _itemsToDelete)
         {
             id = item;
+
             if (!pDeleteNaming->execute())
             {
                 return false;
@@ -260,26 +280,35 @@
 
     bool ViewItem::insertNamings(NamingType nt)
     {
-        dp::IStatementPtr pInsertNaming(_db->createStatement("insert into Naming(TipID, ID, Name) values(?,?,?)"));
+        dp::IStatementPtr pInsertNaming(_db->createStatement("insert into Naming(TipID, ID, Name, Price) values(?,?,?)"));
         dp::Params pParams(pInsertNaming->allocParams());
         td::INT4 id;
         td::String name;
+        double price;
         pParams << nt << id << dp::toNCh(name, 100);
 
         dp::IDataSet* pDS = _table.getDataSet();
         auto rowCnt = pDS->getNumberOfRows();
+
         for (size_t iRow = 0; iRow < rowCnt; ++iRow)
         {
             auto& row = pDS->getRow(iRow);
             id = row[0].i4Val();
-            if (std::find(_itemsToInsert.begin(), _itemsToInsert.end(), id) == _itemsToInsert.end())//this item is not marked to insert, go next
+            price = row[6].r8Val();
+
+            if (std::find(_itemsToInsert.begin(), _itemsToInsert.end(), id) == _itemsToInsert.end())
+            {
                 continue;
+            }
+
             name = row[1];
+
             if (!pInsertNaming->execute())
             {
                 return false;
             }
         }
+
         return true;
     }
 
@@ -288,21 +317,24 @@
     {
         NamingType nt = NamingType::GENERAL_ITEM;
 
-
         dp::IStatementPtr pInsertItem(_db->createStatement("insert into Item(TypeID, ID, VATID, UnitID) values(?,?,?,?)"));
         dp::Params pParams2(pInsertItem->allocParams());
-        td::INT4 id, idVat, idUnit;
+        td::INT4 id, idVat, idUnit;        
         pParams2 << nt << id << idVat << idUnit;
-
 
         dp::IDataSet* pDS = _table.getDataSet();
         auto rowCnt = pDS->getNumberOfRows();
+
         for (size_t iRow = 0; iRow < rowCnt; ++iRow)
         {
             auto& row = pDS->getRow(iRow);
             id = row[0].i4Val();
-            if (std::find(_itemsToInsert.begin(), _itemsToInsert.end(), id) == _itemsToInsert.end())//this item is not marked to insert, go next
+
+            if (std::find(_itemsToInsert.begin(), _itemsToInsert.end(), id) == _itemsToInsert.end())
+            {
                 continue;
+            }
+
             idVat = row[2].i4Val();
             idUnit = row[3].i4Val();
 
@@ -311,6 +343,7 @@
                 return false;
             }
         }
+
         return true;
     }
 
@@ -324,21 +357,22 @@
         dp::Params pParams(pChangeNaming->allocParams());
         pParams << dp::toNCh(name, 100) << nt << id;
 
-
-
         dp::IStatementPtr pChangeItem(_db->createStatement("update Item set VATID=?, UnitID=? where TypeID=? and ID=?"));
         dp::Params pParams2(pChangeItem->allocParams());
         pParams2 << idVat << idUnit << nt << id;
 
-
         dp::IDataSet* pDS = _table.getDataSet();
         auto rowCnt = pDS->getNumberOfRows();
+
         for (size_t iRow = 0; iRow < rowCnt; ++iRow)
         {
             auto& row = pDS->getRow(iRow);
             id = row[0].i4Val();
-            if (std::find(_itemsToUpdate.begin(), _itemsToUpdate.end(), id) == _itemsToUpdate.end())//this item is not marked to insert, go next
+
+            if (std::find(_itemsToUpdate.begin(), _itemsToUpdate.end(), id) == _itemsToUpdate.end())
+            {
                 continue;
+            }
 
             name = row[1];
             idVat = row[2].i4Val();
@@ -348,30 +382,25 @@
             {
                 return false;
             }
+
             if (!pChangeItem->execute())
             {
                 return false;
             }
         }
+
         return true;
     }
-
 
     bool ViewItem::saveData()
     {
         dp::Transaction tr(_db);
 
-        if (!eraseItems())
-            return false;
-        if (!eraseNamings(NamingType::GENERAL_ITEM))
-            return false;
-
-        if (!insertNamings(NamingType::GENERAL_ITEM))
-            return false;
-        if (!insertItems())
-            return false;
-        if (!updateItems())
-            return false;
+        if (!eraseItems()) return false;
+        if (!eraseNamings(NamingType::GENERAL_ITEM)) return false;
+        if (!insertNamings(NamingType::GENERAL_ITEM)) return false;
+        if (!insertItems()) return false;
+        if (!updateItems()) return false;
 
         if (tr.commit())
         {
@@ -379,6 +408,7 @@
             _itemsToInsert.clear();
             _itemsToUpdate.clear();
         }
+
         return true;
     }
 
@@ -395,14 +425,13 @@
             return true;
         }
 
-
         if (pBtn == &_btnDelete)
         {
             int iRow = _table.getFirstSelectedRow();
-            if (iRow < 0)
-                return true;
-            if (!canDelete(iRow))
-                return true;
+
+            if (iRow < 0) return true;
+            if (!canDelete(iRow)) return true;
+
             td::INT4 itemid = getIDfromTable(iRow);
 
             _table.beginUpdate();
@@ -412,16 +441,16 @@
             //if we delete an item, if it was added earlier or modified existing, and we did not save into database, remove it from these two vectors
             _itemsToInsert.erase(std::remove(_itemsToInsert.begin(), _itemsToInsert.end(), itemid), _itemsToInsert.end());
             _itemsToUpdate.erase(std::remove(_itemsToUpdate.begin(), _itemsToUpdate.end(), itemid), _itemsToUpdate.end());
-
             return true;
         }
+
         if (pBtn == &_btnUpdate)
         {
             int iRow = _table.getFirstSelectedRow();
-            if (iRow < 0)
-                return true;
-            if (!canUpdate(iRow))
-                return true;
+
+            if (iRow < 0) return true;
+            if (!canUpdate(iRow)) return true;
+            
             td::INT4 itemid = getIDfromTable(iRow);
 
             _table.beginUpdate();
@@ -429,9 +458,12 @@
             populateDSRow(row);
             _table.updateRow(iRow);
             _table.endUpdate();
-            //update database only of item is not new
+
+            //update database only if an item is not new
             if (std::find(_itemsToInsert.begin(), _itemsToInsert.end(), itemid) == _itemsToInsert.end())
+            {
                 _itemsToUpdate.push_back(itemid);
+            }
 
             return true;
         }
@@ -439,10 +471,10 @@
         if (pBtn == &_btnInsert)
         {
             int iRow = _table.getFirstSelectedRow();
-            if (iRow < 0)
-                iRow = 0;
-            if (!canAdd())
-                return true;
+
+            if (iRow < 0) iRow = 0;
+            if (!canAdd()) return true;
+            
             td::INT4 itemid = getIDfromTable(iRow);
 
             _table.beginUpdate();
@@ -460,14 +492,14 @@
         if (pBtn == &_btnPushBack)
         {
             td::INT4 itemid = _id.getValue().i4Val();
-            if (!canAdd())
-                return true;
+
+            if (!canAdd()) return true;
+
             _table.beginUpdate();
             auto& row = _table.getEmptyRow();
             populateDSRow(row);
             _table.push_back();
             _table.endUpdate();
-
 
             _itemsToUpdate.erase(std::remove(_itemsToUpdate.begin(), _itemsToUpdate.end(), itemid), _itemsToUpdate.end());
             _itemsToInsert.push_back(itemid);
@@ -483,5 +515,3 @@
 
         return false;
     }
-
-
